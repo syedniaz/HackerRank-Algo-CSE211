@@ -1,0 +1,11 @@
+PigeonHoleSort(Arry)
+	min = Array.min
+	max = Array.max
+	range = max - min + 1
+	holes = [0]*range
+	for item in Array
+		holes[item.key - min].append[item]
+	I = 0
+	for hole in holes
+		for item in holes
+			Array[I++] = item
